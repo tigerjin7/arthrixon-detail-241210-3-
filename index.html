@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap" rel="stylesheet">
+        <style>
+            body{
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }        
+            div{
+                font-family: "Do Hyeon", sans-serif;
+                font-size: 1.3rem;
+                margin: 0;
+                padding: 0;
+            }    
+            .head{
+                font-size: 2.2rem;
+                font-weight: bold;
+                color: #10209a;
+            }
+            table{
+                width: 500px;                
+                font-family: "Do Hyeon", sans-serif;
+                font-size: 1.2rem;
+            }
+            span{
+                color: #10209a;
+            }
+            #container{
+                position: relative;
+                width: 500px;
+                height: 500px;
+                margin: auto;
+                padding: 0;
+            }
+            #background-image {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            #overlay-video {
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 80%;
+                opacity: 1;
+                border-radius: 0px;
+                box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+            }
+            form{
+                font-family: "Do Hyeon", sans-serif;
+                font-size: 1.2rem;
+            }
+            a{color: #10209a;}
+            a:hover{color: gray;}
+        </style>
+    </head>
+    <body>
+        <div>
+            <a target="_blank" href="http://www.3hk.co.kr/bbs/board.php?bo_table=product3&wr_id=15">
+                <img src="./select image/1.jpg" alt="1.jpg" width="500px">
+            </a>
+        </div><br><br>
+        <div class="head">
+            불편감이 느껴지는 관절, 근육에<br>
+            oneday크림으로 깊고 빠른 케어합니다
+        </div>
+        <div>
+            <a>
+                <img src="./select image/2.jpg" alt="2.jpg" width="500px">
+            </a>
+        </div>
+        <div>
+            <a>
+                <img src="./select image/3.jpg" alt="3.jpg" width="500px">
+            </a>
+        </div><br>
+        <table align="center">
+            <tbody>
+                <tr>
+                    <td>
+                        아스릭손(80ml)<br>
+                        리스토레이션 젤 <span>펌핑형</span>
+                    </td>
+                    <td>
+                        아스릭손(3gX10ea)<br>
+                        리스토레이션 젤 <span>파우치형</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table><br><br>
+        <div id="container">
+            <img src="./select image/5.jpg" alt="5.jpg" width="500">
+            <video src="https://www.shutterstock.com/shutterstock/videos/1088284773/preview/stock-footage-vfx-back-pain-augmented-reality-animation-close-up-of-a-female-experiencing-discomfort-in-a-result.webm"
+                id="overlay-video" autoplay loop muted>
+            </video>
+        </div>
+        <div>
+            <a>
+                <img src="./select image/6.jpg" alt="6.jpg" width="500px">
+            </a>
+        </div><br>
+        <div>상담 신청하실 분은 아래로 <span>이메일</span>과 <span>자료 및 통증</span>에 대해<br>
+            보내주세요!</div><br>
+        <form action="http://localhost/upload.php" method="post">
+            이메일 : <input type="text" placeholder="많이 신청해주세요!"><br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            파일 : <input type="file"><br><br>
+            <textarea cols="60" rows="10" placeholder="통증에 대해 알려주세요!"></textarea><br><br>
+            <input type="image" src="./select image/button.png" width="250">
+        </form>
+        <div>
+            <a target="_blank" href="http://www.3hk.co.kr/bbs/board.php?bo_table=product3&wr_id=15">
+                아스릭손 홈페이지
+            </a>
+        </div><br>
+    </body>
+</html>
